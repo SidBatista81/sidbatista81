@@ -1,0 +1,10 @@
+{
+  "name": "PWA no Github",
+  "short_name": "PWA no Github",
+  "description": "Github Page as a Progressive Web App",
+  "scope": "/sidbatista81/wap/",
+  "start_url": "/sidbatista81/wap/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone"
+}
