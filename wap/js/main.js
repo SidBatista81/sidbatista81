@@ -1,5 +1,5 @@
 if(window.Worker){
-	var worker = new Worker("worker.js");
+	var worker = new Worker("js/worker.js");
 	worker.onmessage = function(e){
 		result.innerHTML = e.data;
 	};
