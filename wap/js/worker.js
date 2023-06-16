@@ -2,7 +2,7 @@
 var GHPATH = '/sidbatista81/wap';
  
 // Choose a different app prefix name
-var APP_PREFIX = 'gppwa_';
+var APP_PREFIX = 'wpasb81_';
  
 // The version of the cache. Every time you change any of the files
 // you need to change this version (version_01, version_02…). 
