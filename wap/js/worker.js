@@ -1,5 +1,7 @@
 var i = 0;
 
+console.log("worker.js carregado")
+
 onmessage=function(e){
 
 	postMessage("Aguarde...");	var f = function(){
