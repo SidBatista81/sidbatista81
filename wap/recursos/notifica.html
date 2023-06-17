@@ -1,0 +1,6 @@
+<textarea id="texto"></textarea><br>
+<button onclick="geraNotificação()">Gerar notificação</button>
+<script>
+
+geraNotificação = ()=>{Notification.requestPermission();new Notification(texto.value)}
+</script>

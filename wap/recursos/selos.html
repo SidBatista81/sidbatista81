@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<h1>Selos</h1>
+<button onclick="mais()">+</button>
+<button onclick="menos()">-</button><br>
+<button onclick="navigator.clearAppBadge()">Remover</button>
+<script>
+var i = 0;
+atualizaSelo = ()=> {if(navigator.setAppBadge)navigator.setAppBadge(i); else console.log(i);}
+mais = ()=>{i++; atualizaSelo();}
+menos = ()=>{i = i>0?i-1:0; atualizaSelo();}
+
+</script> 
+</html>

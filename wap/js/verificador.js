@@ -1,2 +1,2 @@
-badges.innerHTML = navigator.setAppBadge ? true : false;
-notifications.innerHTML = "Notification" in window
+badges.innerHTML = navigator.setAppBadge ? '<a href="/sidbatista81/wap/recursos/selos.html">Selso</a>' : false;
+notifications.innerHTML = ("Notification" in window) && '<a href="/sidbatista81/wap/recursos/notifica.html">Notificações</a>'
