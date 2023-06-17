@@ -1,4 +1,8 @@
 if(window.Worker){ 
-	result.innerHTML="Não implementado."
+	try{
+		result.innerHTML = VERSION;
+	} catch(ex){
+		result.innerHTML = ex;
+	}
 	navigator.serviceWorker.register('js/worker.js');
 }
