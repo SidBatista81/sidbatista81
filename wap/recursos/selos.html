@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,15 @@
 <button onclick="mais()">+</button>
 <button onclick="menos()">-</button><br>
 <button onclick="navigator.clearAppBadge()">Remover</button>
+<div id="resultado"></div>
 <script>
 var i = 0;
-atualizaSelo = ()=> {if(i == 0)navigator.setAppBadge(); else navigator.setAppBadge(i);num.innerHTML=i}
+atualizaSelo = ()=> {if(i == 0)setAppBadge(); else setAppBadge(i);num.innerHTML=i}
 mais = ()=>{i++; atualizaSelo();}
 menos = ()=>{i--; atualizaSelo();}
-
+function setAppBadge(número){
+	navigator.setAppBadge(número)
+		.then(retorno => resultado.innerHTML = retorno)
+}
 </script> 
 </html>

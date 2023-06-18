@@ -1,6 +1,6 @@
 //var VERSION
+processaParâmetros((new URL(document.location)).searchParams)
 if(window.Worker){ 
-	console.log("Registrando o worker")
 	worker = new Worker('js/worker.js')
 	try{
 		result.innerHTML = VERSION;
@@ -12,4 +12,9 @@ if(window.Worker){
 	}
 	worker.postMessage("Enviando mensagem...");
 	//navigator.serviceWorker.register('js/worker.js');
+}
+
+function processaParâmetros(parâmetros){
+	var alvo = parâmetros.get('alvo');
+	if(alvo) conteudo.src = alvo;
 }

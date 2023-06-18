@@ -9,7 +9,6 @@ var APP_PREFIX = 'wpasb81_';
 // If you don't change the version, the service worker will give your
 // users the old files!
 VERSION = 'version_02';
-console.log(VERSION);
  
 // The files to make available for offline use. make sure to add 
 // others to this list
@@ -20,7 +19,6 @@ var URLS = [
 ]
 
 onmessage = function(e){
-	console.log(e)
 	postMessage(`Versão atual: ${VERSION}`);
 }
 

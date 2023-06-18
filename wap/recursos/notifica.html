@@ -1,9 +1,25 @@
+<!DOCTYPE html>
 <head>
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<div id='notifica'>
 <textarea id="texto">Teste de notificação</textarea><br>
 <button onclick="geraNotificação()">Gerar notificação</button>
+</div>
 <script>
+checkPermission(true)
+	
+function requestPermission(){
+	Notification.requestPermission().then(resultado =>checkPermission())
+}
 
-geraNotificação = ()=>{Notification.requestPermission();new Notification(texto.value)}
+function checkPermission(request = false){
+	var permission
+	if(request) permission = Notification.permission
+	switch(permission){
+		case "default": requestPermission(); break;
+		case "granted": geraNotificação = ()=> new Notification(texto.value); break;
+		default: notifica.innerHTML = `A permição para exibir notificação está com valor ${Notification.permission}.`;	
+	}
+}
 </script>

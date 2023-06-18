@@ -12,5 +12,18 @@
       "sizes": "512x512",
       "type": "image/png"
     }],
+	"shortcuts": [
+    {
+        "name": "Recursos",
+        "description": "Página de recursos",
+        "url": "index.html?alvo=recursos",
+        "icons": [
+            {
+                "src": "imagens/atalho.png",
+                "type": "image/png",
+                "purpose": "any"
+            }
+        ]
+	}],
   "display": "standalone"
 }
