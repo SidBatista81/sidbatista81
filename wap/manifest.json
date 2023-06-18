@@ -10,7 +10,8 @@
     {
       "src": "pwa.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }],
 	"shortcuts": [
     {
@@ -21,7 +22,7 @@
             {
                 "src": "imagens/atalho.png",
                 "type": "image/png",
-                "purpose": "any"
+                "sizes": "96x96"
             }
         ]
 	}],
