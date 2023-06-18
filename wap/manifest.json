@@ -20,9 +20,9 @@
         "url": "index.html?alvo=recursos",
         "icons": [
             {
-                "src": "imagens/atalho.png",
+                "src": "https://sidbatista81.github.io/sidbatista81/wap/imagens/atalho.png",
                 "type": "image/png",
-                "sizes": "96x96"
+                "sizes": "192x192"
             }
         ]
 	}],
