@@ -15,7 +15,7 @@
     }],
 	"shortcuts": [
     {
-        "name": "Recursos",
+        "name": "Recursos do PWA",
         "description": "Página de recursos",
         "url": "index.html?alvo=recursos",
         "icons": [
