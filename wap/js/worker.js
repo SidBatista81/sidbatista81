@@ -17,7 +17,7 @@ var URLS = [
   `${GHPATH}/index.html`,
   `${GHPATH}/js/main.js`
 ]
-
+caches.open("SidBatista81").then(cache=> cache.addAll(URLs))
 onmessage = function(e){
 	postMessage(`Versão atual: ${VERSION}`);
 }
