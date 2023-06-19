@@ -1,2 +1,9 @@
-<button onclick='itens.appendChild(document.createTextNode(`${Math.random()}<br>`))'>Nova linha</button><br>
+<button onclick='append(`${Math.random()}`)'>Nova linha</button><br>
 <div id='itens'></div>
+<script>
+  function append(text){
+    element = document.createElement('div')
+    element.innerText = text
+    itens.appendChild(element)
+  }
+</script>
