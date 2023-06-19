@@ -17,7 +17,7 @@
     {
         "name": "Recursos do PWA",
         "description": "Página de recursos",
-        "url": "index.html?alvo=recursos",
+        "url": "index.html?alvo=recurso",
         "icons": [
             {
                 "src": "imagens/atalho.png",
@@ -25,6 +25,19 @@
                 "sizes": "192x192"
             }
         ]
-	}],
+  },
+    {
+        "name": "Testador de códigos",
+        "description": "Testador de códigos",
+        "url": "index.html?alvo=code_tester",
+        "icons": [
+            {
+                "src": "imagens/atalho.png",
+                "type": "image/png",
+                "sizes": "192x192"
+            }
+        ]
+  }
+  ],
   "display": "standalone"
 }
